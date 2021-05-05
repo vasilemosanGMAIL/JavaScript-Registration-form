@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" , initial-scale=1.0>
+	<meta name="http-equiv" content="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css">
+	<meta name="description" content="JavaScript Registration form validator">
+	<title>JavaScript Registration form validator</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<div class="header">
+			<div id="header">
+				<h1><span class="highlight">JavaScript-</span> Registration form validator</h1>
+			</div>
+		</div>
+	</header>
+
+	<section id="validatorzone" class="validatorzone">
+		<div class="container">
+			<h1>Register With Us</h1><br>
+			<form novalidate>
+				<p>Username</p>
+				<input type="text" id="username" required minlength="4" maxlength="50"
+					placeholder="Enter username"><br><br>
+				<span class="error" id="usernameError" aria-live="polite"></span>
+				<p>Email</p>
+				<input type="email" id="email" required minlength="8" maxlength="50" placeholder="Enter email"><br>
+				<span class="error" id="emailError" aria-live="polite"></span>
+				<p>Password</p>
+				<input type="password" id="password" required minlength="8" maxlength="20"
+					placeholder="Enter password"><br><br>
+				<span class="error" id="passwordError" aria-live="polite"></span>
+				<p>Confirm Password</p>
+				<input type="password" id="confirmPassword" required minlength="8" maxlength="20"
+					placeholder="Enter password again"><br><br>
+				<span class="error" id="confirmPasswordError" aria-live="polite"></span><br>
+				<input type="submit" id="submit" value="Submit"><br>
+			</form>
+		</div>
+	</section>
+	<script src="app.js"></script>
+</body>
+
+</html>
